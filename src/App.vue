@@ -103,7 +103,7 @@ export default {
       if (this.loading) {
         this.loading = false;
       }
-    }, 2000);
+    }, 1500);
   },
 };
 </script>
