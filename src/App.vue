@@ -21,7 +21,7 @@
         <h1 class="text-4xl md:text-6xl font-bold text-white">
           Our Website Is Coming Soon
         </h1>
-        <h2 class="text-gray-300 text-sm md:text-lg lg:text-xl max-w-xs">
+        <h2 class="text-gray-300 text-sm md:text-lg max-w-sm">
           We're Working hard to Finish The Development Of This Site. Check Our
           Instagram For More Information!
         </h2>
