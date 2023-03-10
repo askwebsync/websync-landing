@@ -3,83 +3,48 @@
 @tailwind utilities;
 
 a {
-  transition: all 0.15s ease;
+  transition: .15s
 }
 
 .center {
-  text-align: -webkit-center;
+  text-align: -webkit-center
 }
 
 .background-banner {
   background-image: url(../../public/web-1.jpg);
+  background-position: center center
 }
 
 h1 {
-  font-family: "Tinos", serif;
+  font-family: Tinos, serif;
   font-weight: 500;
-  font-style: italic;
+  font-style: italic
 }
+
 
 h2 {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
+
 }
 
 .shadow-custom {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.275) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, .4) 0 0 0 2px, rgba(6, 24, 44, .65) 0 4px 6px -1px, rgba(255, 255, 255, .275) 0 1px 0 inset
 }
 
 button:hover {
   transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-}
-
-.video-effect {
-  animation: video 10s 2s;
-}
-
-@keyframes video {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.video-effect {
-  animation: video 20s 2s linear;
-}
-
-@keyframes video {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  transition: transform .2s ease-in-out
 }
 
 .spinner {
-  border: 5px solid rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(0, 0, 0, .1);
   border-left-color: #3490dc;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: 1s linear infinite spin
 }

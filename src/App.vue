@@ -4,7 +4,7 @@
   </div>
   <div
     v-if="!loading"
-    class="relative h-screen w-full flex flex-col bg-cover bg-center background-banner video-effect"
+    class="relative h-screen w-full flex flex-col bg-cover bg-center background-banner"
   >
     <div
       class="absolute top-0 right-0 bottom-0 left-0 bg-gray-800 opacity-75"
@@ -118,7 +118,7 @@ export default {
       if (this.loading) {
         this.loading = false;
       }
-    }, 5000);
+    }, 3000);
   },
   // components: {
   //   AppHeader,
