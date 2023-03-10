@@ -4,7 +4,7 @@
   </div>
   <div
     v-if="!loading"
-    class="relative h-screen w-full flex flex-col bg-cover bg-center background-banner"
+    class="relative h-screen w-full flex flex-col background-banner"
   >
     <div
       class="absolute top-0 right-0 bottom-0 left-0 bg-gray-800 opacity-75"
@@ -26,33 +26,24 @@
           Instagram For More Information!
         </h2>
       </div>
-
       <hr />
       <div
         class="flex flex-wrap justify-center p-2 md:p-4 text-center gap-1 md:gap-12 shadow-custom"
       >
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-green-400 text-3xl md:text-5xl">
-            {{ day }}
-          </h2>
+          <h2 class="text-green-400 text-3xl md:text-5xl">{{ day }}</h2>
           <p class="text-white text-base md:text-lg">D</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-green-400 text-3xl md:text-5xl">
-            {{ hours }}
-          </h2>
+          <h2 class="text-green-400 text-3xl md:text-5xl">{{ hours }}</h2>
           <p class="text-white text-base md:text-lg">H</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-green-400 text-3xl md:text-5xl">
-            {{ minutes }}
-          </h2>
+          <h2 class="text-green-400 text-3xl md:text-5xl">{{ minutes }}</h2>
           <p class="text-white text-base md:text-lg">M</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2">
-          <h2 class="text-green-400 text-3xl md:text-5xl">
-            {{ seconds }}
-          </h2>
+          <h2 class="text-green-400 text-3xl md:text-5xl">{{ seconds }}</h2>
           <p class="text-white text-base md:text-lg">S</p>
         </div>
       </div>
