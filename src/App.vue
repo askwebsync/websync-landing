@@ -15,9 +15,7 @@
     <div
       class="flex flex-col gap-12 md:gap-8 z-10 items-center justify-center text-center py-12 md:py-20"
     >
-      <div
-        class="mx-auto space-y-4 center animate__animated animate__bounce animate__slow"
-      >
+      <div class="mx-auto space-y-4 center">
         <h1 class="text-4xl md:text-6xl text-white">
           Our Website Is Coming Soon
         </h1>
@@ -71,8 +69,6 @@
 </template>
 
 <script>
-// import AppHeader from "@/components/Header.vue";
-
 export default {
   name: "App",
   data() {
@@ -106,11 +102,8 @@ export default {
       if (this.loading) {
         this.loading = false;
       }
-    }, 2000);
+    }, 1000);
   },
-  // components: {
-  //   AppHeader,
-  // },
 };
 </script>
 
