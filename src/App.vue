@@ -115,8 +115,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:wght@400;500&family=Tinos:ital,wght@0,700;1,400;1,700&display=swap");
-
 a {
   transition: 0.15s;
 }
@@ -138,11 +136,6 @@ h1 {
 h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-}
-
-p {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
 }
 
 .shadow-custom {
