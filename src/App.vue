@@ -1,5 +1,9 @@
 <template>
+  <div v-if="loading" class="h-screen flex items-center justify-center">
+    <div class="spinner w-12 h-12 mx-auto text-gray-600 animate-spin"></div>
+  </div>
   <div
+    v-if="!loading"
     class="relative h-screen w-full flex flex-col bg-cover bg-center background-banner video-effect"
   >
     <div
@@ -89,6 +93,7 @@ export default {
       hours: "24",
       minutes: "12",
       seconds: "32",
+      loading: true,
     };
   },
   mounted() {
@@ -108,69 +113,17 @@ export default {
       this.seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
     }, 1000);
   },
+  created() {
+    setTimeout(() => {
+      if (this.loading) {
+        this.loading = false;
+      }
+    }, 5000);
+  },
   // components: {
   //   AppHeader,
   // },
 };
 </script>
 
-<style>
-.center {
-  text-align: -webkit-center;
-}
-.background-banner {
-  background-image: url(../src/assets/web-1.jpg);
-}
-h1 {
-  font-family: "Tinos", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-h2 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-}
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-.shadow-custom {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.275) 0px 1px 0px inset;
-}
-button:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-}
-.video-effect {
-  animation: video 10s 2s;
-}
-
-@keyframes video {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.video-effect {
-  animation: video 20s 2s linear;
-}
-
-@keyframes video {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>
+<style></style>
