@@ -13,13 +13,13 @@
       <img src="../public/logo-1.png" alt="logo" class="w-16 h-16 object-fit" />
     </div>
     <div
-      class="flex flex-col gap-12 md:gap-8 z-10 items-center justify-center text-center py-12 md:py-20"
+      class="mt-2 flex flex-col gap-12 z-10 items-center justify-center text-center py-12 md:py-20 md:mt-0 md:gap-8"
     >
-      <div class="mx-auto space-y-4 center">
+      <div class="mx-auto space-y-4 center animation">
         <h1 class="text-4xl md:text-6xl text-white">
           Our Website Is Coming Soon
         </h1>
-        <h2 class="text-gray-300 text-sm md:text-lg max-w-xs">
+        <h2 class="text-gray-400 text-sm md:text-lg max-w-custom">
           We're Working hard to Finish The Development Of This Site. Check Our
           Instagram For More Information!
         </h2>
@@ -49,6 +49,7 @@
         <a href="https://www.instagram.com/websync.id/">
           <button
             type="button"
+            style="background-color: #c13584"
             class="button mb-2 inline-block rounded-full p-3 md:p-4 text-xs md:text-base font-medium uppercase leading-normal text-white shadow-xl transition duration-150 ease-in-out hover:shadow-lg hover:text-black focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
           >
             <svg
@@ -102,7 +103,7 @@ export default {
       if (this.loading) {
         this.loading = false;
       }
-    }, 1000);
+    }, 2000);
   },
 };
 </script>
@@ -137,20 +138,64 @@ h2 {
     rgba(255, 255, 255, 0.275) 0 1px 0 inset;
 }
 
-.button {
-  background-color: #c13584;
-}
-
 .button:hover {
   background-color: white;
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
 }
-
 .spinner {
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-left-color: #3490dc;
   border-radius: 50%;
   animation: 1s linear infinite spin;
+}
+.max-w-custom {
+  max-width: 16rem;
+}
+.animation {
+  animation: textAnim 1s ease 2s 1 normal forwards;
+}
+@keyframes textAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
 }
 </style>
