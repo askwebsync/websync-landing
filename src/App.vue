@@ -21,7 +21,7 @@
         <h1 class="text-4xl md:text-6xl text-white">
           Our Website Is Coming Soon
         </h1>
-        <h2 class="text-gray-300 text-sm md:text-lg max-w-sm">
+        <h2 class="text-gray-300 text-sm md:text-lg max-w-xs">
           We're Working hard to Finish The Development Of This Site. Check Our
           Instagram For More Information!
         </h2>
@@ -31,27 +31,27 @@
         class="flex flex-wrap justify-center p-2 md:p-4 text-center gap-1 md:gap-12 shadow-custom"
       >
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ day }}</h2>
-          <p class="text-white text-base md:text-lg">D</p>
+          <h2 class="text-blue-400 text-3xl md:text4xl">{{ day }}</h2>
+          <p class="text-white text-base">D</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ hours }}</h2>
-          <p class="text-white text-base md:text-lg">H</p>
+          <h2 class="text-blue-400 text-3xl md:text4xl">{{ hours }}</h2>
+          <p class="text-white text-base">H</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ minutes }}</h2>
-          <p class="text-white text-base md:text-lg">M</p>
+          <h2 class="text-blue-400 text-3xl md:text4xl">{{ minutes }}</h2>
+          <p class="text-white text-base">M</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2">
-          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ seconds }}</h2>
-          <p class="text-white text-base md:text-lg">S</p>
+          <h2 class="text-blue-400 text-3xl md:text4xl">{{ seconds }}</h2>
+          <p class="text-white text-base">S</p>
         </div>
       </div>
       <div class="flex justify-center z-10 mt-6">
         <a href="https://www.instagram.com/websync.id/">
           <button
             type="button"
-            class="button mb-2 inline-block rounded-full p-3 md:p-4 text-xs md:text-base font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg hover:text-black focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            class="button mb-2 inline-block rounded-full p-3 md:p-4 text-xs md:text-base font-medium uppercase leading-normal text-white shadow-xl transition duration-150 ease-in-out hover:shadow-lg hover:text-black focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export default {
       if (this.loading) {
         this.loading = false;
       }
-    }, 3000);
+    }, 2000);
   },
   // components: {
   //   AppHeader,
