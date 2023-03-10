@@ -4,7 +4,7 @@
   </div>
   <div
     v-if="!loading"
-    class="relative h-screen w-full flex flex-col background-banner"
+    class="relative h-screen w-full flex flex-col background-banner bg-center bg-cover"
   >
     <div
       class="absolute top-0 right-0 bottom-0 left-0 bg-gray-800 opacity-75"
@@ -18,7 +18,7 @@
       <div
         class="mx-auto space-y-4 center animate__animated animate__bounce animate__slow"
       >
-        <h1 class="text-4xl md:text-6xl font-bold text-white">
+        <h1 class="text-4xl md:text-6xl text-white">
           Our Website Is Coming Soon
         </h1>
         <h2 class="text-gray-300 text-sm md:text-lg max-w-sm">
@@ -31,19 +31,19 @@
         class="flex flex-wrap justify-center p-2 md:p-4 text-center gap-1 md:gap-12 shadow-custom"
       >
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-green-400 text-3xl md:text-5xl">{{ day }}</h2>
+          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ day }}</h2>
           <p class="text-white text-base md:text-lg">D</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-green-400 text-3xl md:text-5xl">{{ hours }}</h2>
+          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ hours }}</h2>
           <p class="text-white text-base md:text-lg">H</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2 mb-4 md:mb-0">
-          <h2 class="text-green-400 text-3xl md:text-5xl">{{ minutes }}</h2>
+          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ minutes }}</h2>
           <p class="text-white text-base md:text-lg">M</p>
         </div>
         <div class="flex flex-col w-20 md:w-auto md:mx-2">
-          <h2 class="text-green-400 text-3xl md:text-5xl">{{ seconds }}</h2>
+          <h2 class="text-blue-400 text-3xl md:text-5xl">{{ seconds }}</h2>
           <p class="text-white text-base md:text-lg">S</p>
         </div>
       </div>
@@ -51,8 +51,7 @@
         <a href="https://www.instagram.com/websync.id/">
           <button
             type="button"
-            class="mb-2 inline-block rounded-full p-3 md:p-4 text-xs md:text-base font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-            style="background-color: #c13584"
+            class="button mb-2 inline-block rounded-full p-3 md:p-4 text-xs md:text-base font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg hover:text-black focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -115,4 +114,57 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:wght@400;500&family=Tinos:ital,wght@0,700;1,400;1,700&display=swap");
+
+a {
+  transition: 0.15s;
+}
+
+.center {
+  text-align: -webkit-center;
+}
+
+.background-banner {
+  background-image: url(/public/web-6.webp);
+}
+
+h1 {
+  font-family: Tinos, serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.shadow-custom {
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px,
+    rgba(6, 24, 44, 0.65) 0 4px 6px -1px,
+    rgba(255, 255, 255, 0.275) 0 1px 0 inset;
+}
+
+.button {
+  background-color: #c13584;
+}
+
+.button:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3490dc;
+  border-radius: 50%;
+  animation: 1s linear infinite spin;
+}
+</style>
