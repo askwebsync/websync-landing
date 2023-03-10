@@ -13,7 +13,7 @@
       <img src="../public/logo-1.png" alt="logo" class="w-16 h-16 object-fit" />
     </div>
     <div
-      class="mt-2 flex flex-col gap-12 z-10 items-center justify-center text-center py-12 md:py-20 md:mt-0 md:gap-8"
+      class="mt-2 flex flex-col gap-10 z-10 items-center justify-center text-center py-12 md:py-20 md:mt-0 md:gap-8"
     >
       <div class="mx-auto space-y-4 center animation">
         <h1 class="text-4xl md:text-6xl text-white">
@@ -151,51 +151,5 @@ h2 {
 }
 .max-w-custom {
   max-width: 16rem;
-}
-.animation {
-  animation: textAnim 1s ease 2s 1 normal forwards;
-}
-@keyframes textAnim {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-    transform: translateY(-250px);
-  }
-
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  55% {
-    animation-timing-function: ease-in;
-    transform: translateY(-65px);
-  }
-
-  72% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-
-  81% {
-    animation-timing-function: ease-in;
-    transform: translateY(-28px);
-  }
-
-  90% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-
-  95% {
-    animation-timing-function: ease-in;
-    transform: translateY(-8px);
-  }
-
-  100% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
 }
 </style>
